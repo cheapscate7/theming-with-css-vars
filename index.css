@@ -1,5 +1,48 @@
+body {
+	--text-color: #333;
+	--background-color: #fff;
+	--background-color-bold: #ccc;
+	
+	color: var(--text-color);
+	background-color: var(--background-color);
+	
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	
+	line-height: 1.5;
+}
+
+
 nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding: 0 2rem;
+}
+
+main {
+	max-width: 53rem;
+	margin: auto;
+}
+
+section:not(first-of-type) {
+	margin: 2.5rem 0;
+}
+
+h1 {
+	margin: 5rem 0;
+}
+
+ul {
+	padding: 30px;
+}
+
+ul>li {
+	margin: .7rem 0;
+}
+
+.focus {
+	padding: .5rem;
+	border-radius: 3px;
+	background-color: var(--background-color-bold);
+	margin: .2rem 0;
 }
