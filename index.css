@@ -1,16 +1,51 @@
 body {
-	--text-color: #333;
-	--background-color: #fff;
-	--background-color-bold: #ccc;
-	
+	/*first, you need to define some colours,
+	this is what we will define our themes on*/
+	--color_1: #333;
+	--color_2: #fff;
+	--color_3: #ccc;
+
+	--color_4: #475F94;
+	--color_5: #FA4224;
+	--color_6: #FDDC5C;
+
+	--color_7: #2A0134;
+	--color_8: #7E4071;
+	--color_9: #FF0789;
+
+	/*here, we are setting the color and background
+	color based on variables we will create below*/
 	color: var(--text-color);
 	background-color: var(--background-color);
-	
+
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 	
 	line-height: 1.5;
 }
 
+/*here we will create our themes
+ they should all define the same variables
+*/
+body.light {
+	--text-color: var(--color_1);
+	--background-color: var(--color_2);
+	--text-color-bold: var(--color_1);
+	--background-color-bold: var(--color_3);
+}
+
+body.dark {
+	--text-color: var(--color_2);
+	--background-color: var(--color_7);
+	--text-color-bold: var(--color_2);
+	--background-color-bold: var(--color_8);
+}
+
+body.colourful {
+	--text-color: var(--color_2);
+	--background-color: var(--color_4);
+	--text-color-bold: var(--color_1);
+	--background-color-bold: var(--color_6);
+}
 
 nav {
 	display: flex;
@@ -40,9 +75,22 @@ ul>li {
 	margin: .7rem 0;
 }
 
+input[type="button"] {
+	border-radius: 2px;
+	border: 0;
+	padding: 0.4rem 0.5rem;
+	cursor: pointer;
+}
+
+input[type="button"], .focus {
+	color: var(--text-color-bold);
+	background-color: var(--background-color-bold);
+	font-weight: bold;
+}
+
 .focus {
 	padding: .5rem;
 	border-radius: 3px;
-	background-color: var(--background-color-bold);
 	margin: .2rem 0;
 }
+
