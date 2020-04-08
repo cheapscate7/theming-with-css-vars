@@ -1,1 +1,7 @@
 ./.idea
+.idea/modules.xml
+.idea/.gitignore
+.idea/vcs.xml
+.idea/theming-with-css-vars.iml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/misc.xml

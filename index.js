@@ -13,7 +13,7 @@ const changeTheme = () => {
 	body.classList.remove(themes[index]);
 	index = index === themes.length -1 ? 0 : index + 1;
 	body.classList.add(themes[index]);
-	selected.set(index);
+	// selected.set(index);
 }
 
 const changeTitle = () => {
