@@ -99,5 +99,18 @@ input[type="button"], .focus {
 	padding: .5rem;
 	border-radius: 3px;
 	margin: .4rem 0;
+	max-width: 53rem;
+}
+
+@media (max-width: 768px) {
+	main {
+		margin: auto 3rem;
+	}
+}
+
+@media (min-width: 2560px) {
+	main {
+		max-width: 90rem;
+	}
 }
 
