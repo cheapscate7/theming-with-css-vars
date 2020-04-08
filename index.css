@@ -86,6 +86,7 @@ input[type="button"], .focus {
 	color: var(--text-color-bold);
 	background-color: var(--background-color-bold);
 	font-weight: bold;
+	outline: none;
 }
 
 .focus {
